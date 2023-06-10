@@ -2,6 +2,8 @@
 
 Fetches and displays RateMyProfessor info on the schedule builder pages.
 
+Uses [zspri/ucf-rmp-worker](https://github.com/zspri/ucf-rmp-worker) to interact with RateMyProfessor's GraphQL API.
+
 ![Example screenshot](https://i.imgur.com/3bdbWO0.png)
 
 ## How to use
