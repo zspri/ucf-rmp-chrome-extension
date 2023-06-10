@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "UCF Schedule Builder RateMyProfessor",
+  "short_name": "UCF RMP",
+  "description": "Show RateMyProfessor ratings on mySchedule Builder.",
+  "version": "1.0",
+  "author": "zspring@streamcord.io",
+  "homepage_url": "https://github.com/zspri/ucf-rmp-chrome-extension",
+  "host_permissions": [
+    "*://ucf.collegescheduler.com/*"
+  ],
+  "content_scripts": [{
+    "matches": [
+      "https://ucf.collegescheduler.com/terms/*/courses*",
+      "https://ucf.collegescheduler.com/terms/*/options*"
+    ],
+    "css": [
+      "rmp.css"
+    ],
+    "js": [
+      "rmp.js"
+    ]
+  }]
+}

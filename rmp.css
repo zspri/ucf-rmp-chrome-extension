@@ -1,0 +1,32 @@
+:root {
+    --rmp-rating-1: rgb(255, 156, 156); /* 1.0 to 2.9 */
+    --rmp-rating-3: rgb(255, 241, 112); /* 3.0 to 3.9 */
+    --rmp-rating-5: rgb(127, 246, 195); /* 4.0 to 5.0 */
+    --rmp-rating-gray: rgb(228, 228, 228); /* difficulty rating */
+}
+
+.rmp-rating {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    width: 24px;
+    font-weight: 500;
+    background-color: var(--rmp-rating-gray);
+}
+
+.rmp-rating.rmp-rating--5 {
+    background-color: var(--rmp-rating-5);
+}
+
+.rmp-rating.rmp-rating--3 {
+    background-color: var(--rmp-rating-3);
+}
+
+.rmp-rating.rmp-rating--1 {
+    background-color: var(--rmp-rating-1);
+}
+
+.rmp-link, .rmp-rating {
+    margin: 0 4px;
+}
